@@ -4,24 +4,24 @@ services:
   movies:
     image: harikrishna1996/moviesrepopaytm:latest
     ports:
-      - "80:80"
+      - 80:80
     deploy:
       replicas: 3
   train:
     image: harikrishna1996/trainrepopaytm:latest
     ports:
-      - "81:80"
+      - 81:80
     deploy:
       replicas: 3
- dth:
+  dth:
     image: harikrishna1996/dthrepopaytm:latest
     ports:
-      - "82:80"
+      - 82:80
     deploy:
       replicas: 3
-recharge:
+  recharge:
     image: harikrishna1996/rechargerepopaytm:latest
     ports:
-      - "83:80"
+      - 83:80
     deploy:
-      replicas: 3 
+      replicas: 3
