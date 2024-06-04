@@ -1,27 +1,16 @@
 ---
 version: "3"
 services:
-  movies:
-    image: harikrishna1996/moviesrepopaytm:latest
+  bus:
+    image: harikrishna1996/bus:latest
     ports:
       - 80:80
     deploy:
       replicas: 3
   train:
-    image: harikrishna1996/trainrepopaytm:latest
+    image: harikrishna1996/train:latest
     ports:
       - 81:80
     deploy:
       replicas: 3
-  dth:
-    image: harikrishna1996/dthrepopaytm:latest
-    ports:
-      - 82:80
-    deploy:
-      replicas: 3
-  recharge:
-    image: harikrishna1996/rechargerepopaytm:latest
-    ports:
-      - 83:80
-    deploy:
-      replicas: 3
+ 
